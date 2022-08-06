@@ -1,5 +1,4 @@
 import React from "react";
-
 import {Heading, Flex} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
