@@ -1,9 +1,12 @@
 import React from "react"
 import { WorkContainer, WorkTitle, CardContainer, CardImage, CardTitle, CardBody, CardFooter, CardBtn } from "./WorkElement";
 import img from "../../../assets/images/6452761.jpg"
+import ProjectList from "../../ProjectLists/projects";
+
 const Work = () => {
     return (
         <WorkContainer>
+            <ProjectList/>
             <WorkTitle>Works</WorkTitle>
             <CardContainer>
                 <CardTitle>LOREM IPSUM</CardTitle>

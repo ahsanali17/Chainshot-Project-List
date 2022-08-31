@@ -2,16 +2,8 @@ import React from "react";
 import { SkillsContainer, SkillsTitle, SkillListContainer, SkillList, SkillItem, SkillItemDiv, SkillItemImg, SkillItemText } from "./SkillsElements";
 import { ExperienceContainer, ExperienceTitle, ExperienceListContainer, ExperienceList, ExperienceItem, ExperienceItemYear, ExperienceItemTitle, ExperienceItemCompany, ExperienceDivider } from "./ExperienceElements";
 import {
-    GithubImg,
-    ReactImg,
-    RubyImg,
-    HTMLImg,
-    CSSImg,
-    JavascriptImg,
-    GraphQlImg,
-    NodeJsImg,
-    SolidityImg,
-} from "../../../assets/index.js";
+    images,
+} from "../../../assets/index";
 
 const Skills = () => {
     return (
@@ -23,55 +15,55 @@ const Skills = () => {
                         <SkillList>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={HTMLImg}/>
+                                    <SkillItemImg src={images.HTMLImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>HTML</SkillItemText>
                             </SkillItem>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={CSSImg}/>
+                                    <SkillItemImg src={images.CSSImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>CSS</SkillItemText>
                             </SkillItem>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={JavascriptImg}/>
+                                    <SkillItemImg src={images.JavascriptImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>Javascript</SkillItemText>
                             </SkillItem>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={GraphQlImg}/>
+                                    <SkillItemImg src={images.GraphQlImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>GraphQL</SkillItemText>
                             </SkillItem>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={GithubImg}/>
+                                    <SkillItemImg src={images.GithubImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>Github</SkillItemText>
                             </SkillItem>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={NodeJsImg}/>
+                                    <SkillItemImg src={images.NodeJsImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>NodeJs</SkillItemText>
                             </SkillItem>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={RubyImg}/>
+                                    <SkillItemImg src={images.RubyImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>Ruby</SkillItemText>
                             </SkillItem>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={ReactImg}/>
+                                    <SkillItemImg src={images.ReactImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>React</SkillItemText>
                             </SkillItem>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={SolidityImg}/>
+                                    <SkillItemImg src={images.SolidityImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>Solidity</SkillItemText>
                             </SkillItem>

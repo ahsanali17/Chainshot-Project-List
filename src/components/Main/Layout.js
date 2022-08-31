@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./header";
-import FooterContainer from './Portfolio/Footer/footerContainer';
+import FooterContainer from '../Portfolio/Footer/footerContainer';
 import { Container } from "@chakra-ui/react";
 
 const Layout = (props) => {

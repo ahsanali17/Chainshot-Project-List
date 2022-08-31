@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-import HomePage from "../components/homePage";
+import HomePage from "../components/Main/homePage";
 import { ContactMe } from ".././components/Portfolio/index";
  
 export default function Routing() {

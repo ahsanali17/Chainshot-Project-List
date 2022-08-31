@@ -1,10 +1,9 @@
 import React from "react";
-import { HeroSection, HeroContent, HeroTitle, HeroLeft, HeroDesc, HeroButton, MatrixSection } from "./HeroElement";
+import { HeroSection, HeroContent, HeroTitle, HeroLeft, HeroDesc, HeroButton } from "./HeroElement";
 
 const Hero = () => {
     return(
        <HeroSection>
-           <MatrixSection />
            <HeroContent>
                <HeroLeft>
                     <HeroTitle>

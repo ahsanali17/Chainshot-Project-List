@@ -59,9 +59,9 @@ export const HeroButton = styled.a`
     }
 `;
 
-export const MatrixSection = styled.section`
-    width: 50%;
-    height: 50vh;
-    background-image: url(${RightImg});
-    float: right;
-`;
+// export const MatrixSection = styled.section`
+//     width: 50%;
+//     height: 50vh;
+//     background-image: url(${RightImg});
+//     float: right;
+// `;
