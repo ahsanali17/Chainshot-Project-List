@@ -60,6 +60,11 @@ export const NavBtn = styled.nav`
     }
 `;
 
+export const NavNameText = styled.h1`
+    display: flex;
+
+`
+
 // export const NavBtnLink = styled(Link)`
 //     border-radius: 4px;
 //     background: #fff;

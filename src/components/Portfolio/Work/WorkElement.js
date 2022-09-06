@@ -14,7 +14,7 @@ export const WorkTitle = styled.h4`
 
 export const CardContainer = styled.div`
     display: inline-grid;
-    width: 300px;
+    width: 340px;
     overflow: hidden;
     box-shadow: 0px 0px 15px -5px;
     transition: 0.5s;
