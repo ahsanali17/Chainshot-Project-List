@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import { 
  Avatar,
@@ -13,8 +13,8 @@ import {
 } from "@chakra-ui/react";
 
 import { MdTimer, MdVideoLibrary } from "react-icons/md";
-import { IoEllipsisHorizontalSharp } from "react-icons/io5";
-
+import { Link } from "react-router-dom";
+import DashboardCodeboxx from "../Main/DashboardCodeboxx";
 
 
 function CodeboxxProjects() {
@@ -23,6 +23,14 @@ function CodeboxxProjects() {
   let mainText = useColorModeValue("gray.800", "white");
   let iconBox = useColorModeValue("gray.100", "whiteAlpha.200");
   let iconColor = useColorModeValue("brand.200", "white");
+
+  const [openDash, setOpenDash] = useState(false);
+  const renderDashboard = () => {
+    if(openDash) {
+      return <DashboardCodeboxx/>
+    }
+  }
+
   return (
     <Flex
       borderRadius='20px'
@@ -33,17 +41,24 @@ function CodeboxxProjects() {
       <Box p='20px'>
         <Flex w='100%' mb='10px'>
           <Image src='https://i.ibb.co/ZWxRPRq/Venus-Logo.png' me='auto' />
-          <Button
-            w='200px'
-            h='38px'
-            align='center'
-            justify='center'
-            borderRadius='12px'
-            me='12px'
-            bg={iconBox}
-           >
-            Enter Dashboard
-          </Button>
+          <Link to={"/Dashboard/:Codeboxx"}>
+            <Button
+              w='200px'
+              h='38px'
+              align='center'
+              justify='center'
+              borderRadius='12px'
+              me='12px'
+              bg={iconBox}
+              onClick={() => {
+                if(setOpenDash(true)) {
+                  renderDashboard();
+                }
+              }}
+            >
+              Enter Dashboard
+            </Button>
+          </Link>
         </Flex>
         <Box>
           <Text fontWeight='600' color={mainText} w='100%' fontSize='2xl'>

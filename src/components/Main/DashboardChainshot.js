@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Heading, Button, TableContainer, Table, Thead, Tbody, Th, Tr, Td } from "@chakra-ui/react";
 
-const Dashboard = () => {
+const DashboardCodeboxx = () => {
   return <Box mt={5} textAlign="center">
     <Heading>Creator Dashboard</Heading>
     <TableContainer>
@@ -32,4 +32,4 @@ const Dashboard = () => {
   </Box>;
 };
 
-export default Dashboard;
+export default DashboardCodeboxx;
