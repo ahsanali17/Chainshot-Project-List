@@ -1,8 +1,8 @@
 import React from "react"
 import { WorkContainer, WorkTitle, CardContainer, CardImage, CardTitle, CardBody, CardFooter, CardBtn } from "./WorkElement";
 import img from "../../../assets/images/6452761.jpg"
-import ChainshotProjects from "../../ProjectLists/chainshotProjects";
-import CodeboxxProjects from "../../ProjectLists/codeboxxProjects";
+import ChainshotProjects from "../../Main/ProjectLists/chainshotProjects";
+import CodeboxxProjects from "../../Main/ProjectLists/codeboxxProjects";
 
 const Work = () => {
     return (

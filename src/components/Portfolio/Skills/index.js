@@ -2,75 +2,100 @@ import React from "react";
 import { SkillsContainer, SkillsTitle, SkillListContainer, SkillList, SkillItem, SkillItemDiv, SkillItemImg, SkillItemText } from "./SkillsElements";
 import { ExperienceContainer, ExperienceTitle, ExperienceListContainer, ExperienceList, ExperienceItem, ExperienceItemYear, ExperienceItemTitle, ExperienceItemCompany, ExperienceDivider } from "./ExperienceElements";
 import {
-    images,
+ GithubImg,
+ ReactImg,
+ RubyImg,
+ HTMLImg,
+ CSSImg,
+ JavascriptImg,
+ GraphQlImg,
+ NodeJsImg,
+ SolidityImg,
 } from "../../../assets/index";
+import Carousel from 'nuka-carousel';
 
 const Skills = () => {
     return (
         <div>
-            <SkillsContainer>
+            <Carousel 
+                wrapAround={true} 
+                slidesToShow={4} 
+                autoplay={true}
+                autoplayInterval={1000}
+            >
+                <img src={GithubImg}/>
+                <img src={ReactImg}/>
+                <img src={RubyImg}/>
+                <img src={HTMLImg}/>
+                <img src={CSSImg}/>
+                <img src={JavascriptImg}/>
+                <img src={GraphQlImg}/>
+                <img src={NodeJsImg}/>
+                <img src={SolidityImg}/>
+            </Carousel>
+            {/* <SkillsContainer>
                 <SkillsTitle>Skills</SkillsTitle>
                 <SkillListContainer>
                     <div>
                         <SkillList>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={images.HTMLImg}/>
+                                    <SkillItemImg src={HTMLImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>HTML</SkillItemText>
                             </SkillItem>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={images.CSSImg}/>
+                                    <SkillItemImg src={CSSImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>CSS</SkillItemText>
                             </SkillItem>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={images.JavascriptImg}/>
+                                    <SkillItemImg src={JavascriptImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>Javascript</SkillItemText>
                             </SkillItem>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={images.GraphQlImg}/>
+                                    <SkillItemImg src={GraphQlImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>GraphQL</SkillItemText>
                             </SkillItem>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={images.GithubImg}/>
+                                    <SkillItemImg src={GithubImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>Github</SkillItemText>
                             </SkillItem>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={images.NodeJsImg}/>
+                                    <SkillItemImg src={NodeJsImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>NodeJs</SkillItemText>
                             </SkillItem>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={images.RubyImg}/>
+                                    <SkillItemImg src={RubyImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>Ruby</SkillItemText>
                             </SkillItem>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={images.ReactImg}/>
+                                    <SkillItemImg src={ReactImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>React</SkillItemText>
                             </SkillItem>
                             <SkillItem>
                                 <SkillItemDiv>
-                                    <SkillItemImg src={images.SolidityImg}/>
+                                    <SkillItemImg src={SolidityImg}/>
                                 </SkillItemDiv>
                                 <SkillItemText>Solidity</SkillItemText>
                             </SkillItem>
                         </SkillList>
                     </div>
                 </SkillListContainer>
-            </SkillsContainer>
+            </SkillsContainer> */}
             
             <ExperienceContainer>
                 <ExperienceTitle>Experience</ExperienceTitle>

@@ -3,7 +3,7 @@ import React from "react";
 // import { Button, Container, Box, Wrap, Stack } from "@chakra-ui/react";
 // import { Link } from "react-router-dom";
 import {ContactMe, Hero, Skills, Work} from '../Portfolio/index';
-import ProjectList from "../ProjectLists/projects";
+import ProjectList from "./ProjectLists/projects";
 import './homepage.scss';
 
 const HomePage = () => {

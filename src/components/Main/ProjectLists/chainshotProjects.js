@@ -14,23 +14,24 @@ import {
 
 import { MdTimer, MdVideoLibrary } from "react-icons/md";
 import { Link } from "react-router-dom";
-import DashboardCodeboxx from "../Main/DashboardCodeboxx";
+import DashboardChainshot from "../DashboardChainshot";
 
 
-function CodeboxxProjects() {
+
+function ChainshotProjects() {
  let boxBg = useColorModeValue("white !important", "#111c44 !important");
   let secondaryBg = useColorModeValue("gray.50", "whiteAlpha.100");
   let mainText = useColorModeValue("gray.800", "white");
   let iconBox = useColorModeValue("gray.100", "whiteAlpha.200");
   let iconColor = useColorModeValue("brand.200", "white");
-
   const [openDash, setOpenDash] = useState(false);
+  
   const renderDashboard = () => {
     if(openDash) {
-      return <DashboardCodeboxx/>
+      return <DashboardChainshot/>
     }
   }
-
+  
   return (
     <Flex
       borderRadius='20px'
@@ -41,7 +42,7 @@ function CodeboxxProjects() {
       <Box p='20px'>
         <Flex w='100%' mb='10px'>
           <Image src='https://i.ibb.co/ZWxRPRq/Venus-Logo.png' me='auto' />
-          <Link to={"/Dashboard/:Codeboxx"}>
+          <Link to={"/Dashboard/:Chainshot"}>
             <Button
               w='200px'
               h='38px'
@@ -56,13 +57,13 @@ function CodeboxxProjects() {
                 }
               }}
             >
-              Enter Dashboard
+                Enter Dashboard
             </Button>
           </Link>
         </Flex>
         <Box>
           <Text fontWeight='600' color={mainText} w='100%' fontSize='2xl'>
-           Codeboxx Projects
+            Chainshot Projects
           </Text>
           <AvatarGroup
             size='sm'
@@ -124,4 +125,4 @@ function CodeboxxProjects() {
   );
 }
 
-export default CodeboxxProjects;
+export default ChainshotProjects;
